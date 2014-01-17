@@ -1,0 +1,45 @@
+{
+  "name": "db-migrate",
+  "description": "Database migration framework for node.js",
+  "author": "Jeff Kunkle",
+  "bin": "./bin/db-migrate",
+  "keywords": [
+    "database",
+    "db",
+    "migrate",
+    "migration",
+    "sqlite",
+    "mysql"
+  ],
+  "version": "0.6.3",
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "bugs": {
+    "url": "https://github.com/kunklejr/node-db-migrate/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kunklejr/node-db-migrate.git"
+  },
+  "dependencies": {
+    "optimist": "~0.3.0",
+    "async": "~0.1.15",
+    "semver": "~1.0.14",
+    "mkdirp": "~0.3.4",
+    "moment": "~1.7.2",
+    "pkginfo": "~0.3.0",
+    "parse-database-url": "~0.2.0"
+  },
+  "devDependencies": {
+    "vows": "~0.7.0",
+    "db-meta": "~0.4.1",
+    "mysql": "~2.0.0",
+    "pg": "~1.0.0",
+    "sqlite3": "~2.1.0"
+  },
+  "scripts": {
+    "test": "node node_modules/.bin/vows"
+  }
+}

@@ -1,0 +1,6 @@
+
+<h1>Blog contents</h1>
+
+<% posts.forEach(function(post){ %>
+  <h3><a href="/blog/<%= post.id %>"><%= post.title %></a></h3>
+<% }) %>

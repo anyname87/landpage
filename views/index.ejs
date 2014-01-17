@@ -1,0 +1,108 @@
+
+<div class="well">
+<h3>Welcome to&nbsp;Model-Route-View example for&nbsp;Node.js powered by&nbsp;Helicon&nbsp;Zoo!</h3>
+<p>Look at the <strong><a href="/blog">example blog application</a></strong> or
+  <strong><a href="/admin">example blog admin</a></strong> powered by jqgrid</p>
+</div>
+
+<div class="row">
+  <div class="span4">
+    <h2>Modules</h2>
+      <ul>
+        <li><h3><a href="http://www.helicontech.com/zoo/">Helicon Zoo</a></h3></li>
+        <li>
+          <h3><a href="http://nodejs.org">node.js</a></h3>
+          <h4>node.js packages</h4>
+          <ul>
+            <li>
+              <h4><a href="http://expressjs.com/">express</a></h4>
+              <p>web application framework for node</p>
+            </li>
+            <li>
+              <h4><a href="http://github.com/developmentseed/node-sqlite3">sqlite3</a></h4>
+              <p>Asynchronous, non-blocking SQLite3 bindings for Node.js</p>
+            </li>
+            <li>
+              <h4><a href="https://github.com/nearinfinity/node-persist">persist</a></h4>
+              <p>Node.js ORM framework supporting MySQL and SQLite 3 relational databases</p>
+            </li>
+            <li>
+              <h4><a href="https://github.com/visionmedia/ejs">ejs</a></h4>
+              <p>Embedded JavaScript templates for node</p>
+            </li>
+            <li>
+              <h4><a href="https://github.com/caolan/async">async</a></h4>
+              <p>Async utilities for node and the browser</p>
+            </li>
+            <li>
+              <h4><a href="https://github.com/nearinfinity/node-db-migrate">db-migrate</a></h4  >
+              <p>Database migration framework for node</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3><a href="http://twitter.github.io/bootstrap/">Bootstrap</a></h3>
+        </li>
+      </ul>
+  </div>
+  <div class="span8">
+    <h2>Project layout</h2>
+    <ul class="unstyled">
+      <li>
+        <code>/console/</code> — directory with security rules for web console
+      </li>
+      <li>
+        <code>/log/</code> — Helicon Zoo logs directory
+      </li>
+      <li>
+        <code>/migrations/</code> — directory with database migrations, used by <strong>db—migrate</strong>
+      </li>
+      <li>
+        <code>/models/</code> — directory with models definitions, used by <strong>persist</strong>
+      </li>
+      <li>
+        <code>/node_modules/</code> — directory with local installed node modules
+      </li>
+      <li>
+        <code>/public/</code> — directory with static files (js, css, images)
+      </li>
+      <li>
+        <code>/routes/</code> — directory with application routes, used by <strong>express</strong>
+      </li>
+      <li>
+        <code>/views/</code> — directory with application views (templates), used by <strong>express</strong>
+      </li>
+      <li>
+        <code>/app.js</code> — application executable file (application worker)
+      </li>
+      <li>
+        <code>/createTestData.js</code> — script to fill application blog with example posts, called from <strong>deploy</strong>
+      </li>
+      <li>
+        <code>/database.json</code> — database definitions, used by <strong>persist</strong>
+      </li>
+      <li>
+        <code>/deploy.js</code> — application deploy script, called once by <strong>Helicon Zoo</strong> on app start
+      </li>
+      <li>
+        <code>/dev.db</code> - sqlite3 database file
+      </li>
+      <li>
+        <code>/package.json</code> — this project description
+      </li>
+      <li>
+        <code>/web.config</code> — configuration file for IIS 7+
+      </li>
+    </ul>
+    <h2>Web console</h2>
+    <p>To install additional node modules in current site environment use web console provided by Helicon Zoo.</p>
+    <p><a href="console" class="btn btn-large" target="_blank">Start web console</a></p>
+    <p>and try some commands:</p>
+    <ul class="unstyled">
+      <li><code>npm -l</code> — display full npm usage info</li>
+      <li><code>npm ls</code> — show installed modules</li>
+      <li><code>npm install</code> — install modules required by current app (described in package.json)</li>
+
+    </ul>
+  </div>
+</div>
