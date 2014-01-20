@@ -1,46 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %> - Node.js MVR example</title>
+    <title>Landpage project</title>
     <script src="/javascripts/jquery-1.7.1.js" type="text/javascript"></script>
     <script src="/jqueryui/js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
     <script src="/jqgrid/js/i18n/grid.locale-en.js" type="text/javascript"></script>
     <script src="/jqgrid/js/jquery.jqGrid.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">-->
     <link rel="stylesheet" type="text/css" href="/jqueryui/css/smoothness/jquery-ui-1.8.16.custom.css" />
     <link rel="stylesheet" type="text/css" href="/jqgrid/css/ui.jqgrid.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
   </head>
   <body>
-  <div class="navbar navbar-static-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="/">MVR Node.js Project powered by Helicon Zoo</a>
-          <ul class="nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/admin">Blog Admin</a></li>
-          </ul>
-        </div>
-      </div>
+    <!--Шапка сайта-->
+	<div id="header">
+        <%-partial('./partials/main-menu')%>
+	</div>
+    <!--end.Шапка сайта-->
+    <!--Форма поиска по сайту-->
+    <%-partial('./partials/search')%>
+    <!--end.Форма поиска по сайту-->
+    <!--Главный блок страницы-->
+	<div id="page">
+        <%- body %>
+	</div>
+    <!--end.Главный блок страницы-->
+    <!--Подвал сайта-->
+	<div id="footer">
+		<div class="wrap row">
+			<div class="column two-cols">&copy; 2014 Anyname Projects LANDPAGE</div>
+			<div class="column five-cols"><a href="">Информация о сайте</a></div>
+			<div class="column three-cols"><a href="">Пользовательское соглашение</a><br/><a href="">Обратная связь</a></div>
+			<div class="column two-cols"><a href="">Реклама</a><br/><a href="">Магазинам</a></div>
+		</div>
     </div>
-
-    <div class="container">
-
-    <br/>
-
-    <%- body %>
-
-    <hr/>
-    <div id="footer">
-      <p>
-        Node.js Model-View-Route template by
-        <a href="http://www.helicontech.com/zoo/">Helicon Tech</a>
-        based on
-        <a href="https://github.com/nearinfinity/node-persist/tree/master/examples/webapp">nearinfinity / node-persist</a>
-        web app example
-      </p>
-    </div>
-
-    </div>
+    <!--end.Подвал сайта-->
   </body>
 </html>
